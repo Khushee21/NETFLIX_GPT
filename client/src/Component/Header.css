@@ -1,0 +1,52 @@
+/* Header.css */
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  padding: 0;
+  z-index: 50;
+  background: linear-gradient(to bottom, black, transparent);
+  display: flex;
+  justify-content:space-between;
+}
+
+.header-logo {
+  width: 25%; 
+  padding: 2% 4%;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.user-icon img {
+  width: 12%;
+  height: auto;
+}
+
+.logout-btn {
+  background-color: rgb(185, 28, 28);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 67%;
+  font-weight: bold;
+  padding: 1% 2%;
+  border-radius: 11%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-left: 0; 
+  margin-right: 2%;
+}
+
+.user-container .logout-btn:hover {
+  background-color: rgb(150, 20, 20);
+}
