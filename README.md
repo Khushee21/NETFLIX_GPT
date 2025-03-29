@@ -1,3 +1,5 @@
+/node_modules
+
 # NETFLIX_GPT
 learning react with Namaste React
 
@@ -29,6 +31,15 @@ learning react with Namaste React
 .Fetch data for Trailer Video
 .update store with trailer video data
 .Embbeded the utube video and make it autoplay and mute
+-TMDB Image CDN URL
+-Mute the Browser page 
+-usePopular movie custom hooks
+-useTopRate movie custom hooks
+-GPT search Feature
+-GPT search page
+*-MUlti_Language feature in our App
+-Integrate GPT APIs 
+
 
 
 #features

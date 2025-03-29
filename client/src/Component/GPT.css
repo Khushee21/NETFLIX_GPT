@@ -1,0 +1,60 @@
+.gpt-search-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.search-bar-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.search-bar {
+  background-color: black;
+  width: 50%;
+  padding: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.input-box {
+  padding: 2% 10%;
+  margin: 2%;
+  border-radius: 5%;
+  border: none;
+  font-size: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-box {
+  padding: 1% 2%;
+  background-color: rgb(185, 28, 28);
+  color: white;
+  border-radius: 5%;
+  font-size: 130%;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

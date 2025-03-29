@@ -4,23 +4,27 @@ import useMovieTrailer from "../hooks/useMovieTrailer";
 import "./VideoBackground.css";
 
 const VideoBackground = ({ movieId }) => {
-    const trailerVideo = useMovieTrailer(movieId); // Use the updated hook
+    const trailerVideo = useMovieTrailer(movieId); 
 
     if (!trailerVideo) {
         return <p>Loading trailer...</p>;
     }
 
     return (
-        <div>
-            <iframe 
-                className="video"  
-                src={`https://www.youtube.com/embed/${trailerVideo.key}?autoplay=1&mute=1`} 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
-        </div>
+       
+            <div style={{ marginTop: "-7%" }}>
+                <iframe
+                    className="video"
+                    src={`https://www.youtube.com/embed/${trailerVideo.key}?autoplay=1&mute=1`}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                ></iframe>
+            </div>
+     
+        
     );
+    
 };
 
 export default VideoBackground;

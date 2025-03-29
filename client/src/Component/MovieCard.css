@@ -1,0 +1,50 @@
+.secondary-container {
+  
+  z-index: 1;
+ 
+}
+
+.movie-list-container {
+    padding: 1%;
+   
+  }
+  
+  .movie-title {
+    font-size: large;
+    font-weight: 700;
+    padding: 0.5%;
+    margin-top: 0.5%;
+    color: white;
+    padding-left: 3%;
+  }
+  
+  .movie-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5%;
+    padding: 1%;
+  }
+  
+  .movie-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .movie-card-container {
+    width: 11%;
+    min-width: 11%;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .movie-card-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  

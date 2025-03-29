@@ -5,22 +5,25 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; 
+  width: 100%;
   padding: 0;
   z-index: 50;
   background: linear-gradient(to bottom, black, transparent);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
-  width: 25%; 
+  width: 25%;
   padding: 2% 4%;
 }
 
 .user-container {
   display: flex;
   align-items: center;
+  gap: 10px;
+  margin-right: 2%;
 }
 
 .user-icon {
@@ -29,24 +32,52 @@
 }
 
 .user-icon img {
-  width: 12%;
-  height: auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .logout-btn {
   background-color: rgb(185, 28, 28);
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 67%;
+  font-size: 12px;
   font-weight: bold;
-  padding: 1% 2%;
-  border-radius: 11%;
+  padding: 8px 12px;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  margin-left: 0; 
-  margin-right: 2%;
+  border: none;
 }
 
-.user-container .logout-btn:hover {
+.logout-btn:hover {
   background-color: rgb(150, 20, 20);
+}
+
+.gpt-search {
+  padding: 8px 16px;
+  background-color: rgb(185, 28, 28);
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.gpt-search:hover {
+  background-color: rgb(150, 20, 20);
+}
+
+.drop-down-lang {
+  margin-right: 12px;
+  padding: 8px 12px;
+  background-color: rgb(185, 28, 28);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }

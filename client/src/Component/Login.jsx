@@ -7,6 +7,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
+import { BG } from "./constant";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -23,7 +24,7 @@ const Login = () => {
   };
 
   const handleButtonClick = () => {
-    // Validate the form data
+
     const msg = checkValidData(
       name.current?.value,
       email.current.value,
@@ -32,9 +33,8 @@ const Login = () => {
     setErrorMessage(msg);
      
     if(msg) return;
-      //sign in sign up
+
       if(!isSignInForm) {
-        //Sign 
         createUserWithEmailAndPassword(
           auth ,
           email.current.value, 
@@ -93,16 +93,15 @@ const Login = () => {
     <div className="login-container">
       <Header />
 
-      {/* Background Image */}
       <div>
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg"
+          src={BG}
           alt="Background"
           className="login-background"
         />
       </div>
 
-      {/* Login Form */}
+    
       <form onSubmit={(e) => e.preventDefault()} className="login-form">
         <h1 className="login-title">
           {isSignInForm ? "Sign In" : "Sign Up"}

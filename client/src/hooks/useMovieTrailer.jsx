@@ -16,14 +16,14 @@ const useMovieTrailer = (movieId) => {
                 );
                 const json = await response.json();
 
-                console.log("API Response:", json);
+                //console.log("API Response:", json);
 
                 // Find the first trailer of type "Trailer" and site "YouTube"
                 const trailer = json.results.find(video => video.type === "Trailer" && video.site === "YouTube");
 
                 if (trailer) {
-                    console.log("Selected Trailer:", trailer);
-                    dispatch(addTrailerVideo(trailer)); // Corrected dispatch function
+                   // console.log("Selected Trailer:", trailer);
+                    dispatch(addTrailerVideo(trailer)); 
                 } else {
                     console.warn("No trailer found for this movie.");
                 }
@@ -33,9 +33,9 @@ const useMovieTrailer = (movieId) => {
         };
 
         if (movieId) getMovieVideo();
-    }, [movieId, dispatch]); // Added `movieId` as a dependency
+    }, [movieId, dispatch]); 
 
-    return trailerVideo; // Return the trailer so it can be used in the component
+    return trailerVideo; 
 };
 
 export default useMovieTrailer;

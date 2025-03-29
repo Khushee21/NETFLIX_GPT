@@ -2,39 +2,40 @@
     position: absolute;
     top: 40%;
     width: 100%; 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
-    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+    padding: 2%;
     z-index: 10;
-    height: 100%;
+    height: 44%; 
 }
 
 .Video-title{
-    font-size:280%;
+    font-size:200%;
     font-weight: 700;
     color: aliceblue;
 }
 .Video-des{
     font-style: bold;
-    width: 50%;
+    width: 40%;
     color: aliceblue;
+    font-size: 80%;
 }
 
 .Buttons{
     padding-left: 10%;
-    padding-top: 2%;
+    padding-top: 0.5%;
     display: flex;
 }
 
 .Play-btn {
     background-color:azure; 
     color:black;
-    width: 13%;
-    padding: 1%;
+    width: 11%;
+    padding: 0.8%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10%;
-    margin-right: 3%;
+    margin-right: 1%;
     font-size: 90%;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.3); 
@@ -47,8 +48,8 @@
 .more-info-btn{
     background-color: rgb(183, 171, 171, 0.1);
     color: whitesmoke;
-    width: 13%;
-    padding: 1%;
+    width: 11%;
+    padding: 0.8%;
     align-items: center;
     justify-content: center;
     border-radius: 10%;
